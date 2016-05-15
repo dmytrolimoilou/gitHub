@@ -25,7 +25,15 @@
         
         <script id="templateScript" type="text/x-handlebars-template">
             {{#each projets}}
-            <li><a href="../{{dir}}/index.html{{skin}}">{{nom}}
+            <li><a href="
+                {{#if dirGit}}
+                    {{dirGit}}
+                {{/if}}
+                {{#if dir}}
+                    ../{{dir}}/index.html{{skin}}
+                {{/if}}
+                ">{{nom}}
+                
                 {{#if descrip}}
                 <span id="col">{{descrip}}</span>
                 {{/if}}
