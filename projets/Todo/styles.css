@@ -1,0 +1,384 @@
+@import "../../common/css/common_style.css";
+@import "../../common/css/normalize.min.css";
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+:root body {
+  background: black;
+  color: red;
+}
+:root article {
+  display: flex;
+  padding: 2px;
+}
+:root #page {
+  margin: 20px 0 20px 10px;
+  font-family: 'Pacifico', cursive;
+}
+:root #input {
+  margin-left: 5%;
+  border: 0px;
+  border-radius: 10px;
+  border-color: red;
+  box-shadow: 0 0 10px 10px red;
+  background: red;
+  color: #8c0000;
+  padding-left: 5px;
+}
+:root #todolist {
+  padding-top: 2%;
+  padding-right: 2%;
+}
+:root #todolist:empty::after {
+  content: "Veuillez entrer une nouvelle tâche à faire svp!";
+  font: bold italic 100% serif;
+  text-align: center;
+  color: lime;
+}
+:root button {
+  min-width: 50%;
+  max-width: 100%;
+  background: white;
+  color: black;
+  opacity: 0.8;
+  mix-blend-mode: difference;
+  transition: 1s;
+}
+:root button:hover {
+  opacity: 1;
+  background: black;
+  color: red;
+}
+:root button:disabled {
+  display: none;
+}
+:root img {
+  min-width: 16px;
+  max-height: 16px;
+  margin-left: 50px;
+  background: inherit;
+}
+:root #btnimg {
+  transition: 0s;
+}
+:root header {
+  font-weight: 700;
+}
+:root .checkbox {
+  min-width: 16px;
+  min-height: 16px;
+}
+:root .checkbox,
+:root .text,
+:root img {
+  transition: 1s;
+}
+:root .checkbox:hover,
+:root .checkbox:focus,
+:root img:hover,
+:root img:focus {
+  background: white;
+  box-shadow: 0 0 3px 3px white;
+  border: 0px;
+  border-radius: 5px;
+  color: black;
+}
+:root .text:focus {
+  background: white;
+  box-shadow: 0 0 3px 3px white;
+  border: 0px;
+  border-left: solid 9px white;
+  border-right: solid 9px white;
+  border-radius: 5px;
+  color: black;
+}
+:root .text:hover {
+  border-left: solid 9px white;
+  border-right: solid 9px white;
+  border-radius: 5px;
+}
+:root .text {
+  color: white;
+  margin-left: 10px;
+  padding-left: 5px;
+  width: 200px;
+  border-left: solid 9px black;
+  border-right: solid 9px black;
+}
+:root .text2 {
+  margin-left: 10px;
+  padding-left: 5px;
+  width: 200px;
+  border-left: solid 9px black;
+  border-right: solid 9px black;
+  text-decoration: line-through;
+  -moz-text-decoration-color: red;
+  -webkit-text-decoration-color: red;
+  text-decoration-color: red;
+}
+@media (max-width: 361px) {
+  :root .hide-on-small-screen {
+    display: none;
+  }
+}
+:root #flex {
+  border: solid red;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 5% 10px 10px 10px;
+}
+:root #flex > * {
+  margin: 10px;
+}
+:root.blue-on-orange body {
+  background: #FFaa00;
+  color: blue;
+}
+:root.blue-on-orange article {
+  display: flex;
+  padding: 2px;
+}
+:root.blue-on-orange #page {
+  margin: 20px 0 20px 10px;
+  font-family: 'Pacifico', cursive;
+}
+:root.blue-on-orange #input {
+  margin-left: 5%;
+  border: 0px;
+  border-radius: 10px;
+  border-color: blue;
+  box-shadow: 0 0 10px 10px blue;
+  background: blue;
+  color: #8c0000;
+  padding-left: 5px;
+}
+:root.blue-on-orange #todolist {
+  padding-top: 2%;
+  padding-right: 2%;
+}
+:root.blue-on-orange #todolist:empty::after {
+  content: "Veuillez entrer une nouvelle tâche à faire svp!";
+  font: bold italic 100% serif;
+  text-align: center;
+  color: red;
+}
+:root.blue-on-orange button {
+  min-width: 50%;
+  max-width: 100%;
+  background: black;
+  color: #FFaa00;
+  opacity: 0.8;
+  mix-blend-mode: difference;
+  transition: 1s;
+}
+:root.blue-on-orange button:hover {
+  opacity: 1;
+  background: #FFaa00;
+  color: blue;
+}
+:root.blue-on-orange button:disabled {
+  display: none;
+}
+:root.blue-on-orange img {
+  min-width: 16px;
+  max-height: 16px;
+  margin-left: 50px;
+  background: inherit;
+}
+:root.blue-on-orange #btnimg {
+  transition: 0s;
+}
+:root.blue-on-orange header {
+  font-weight: 700;
+}
+:root.blue-on-orange .checkbox {
+  min-width: 16px;
+  min-height: 16px;
+}
+:root.blue-on-orange .checkbox,
+:root.blue-on-orange .text,
+:root.blue-on-orange img {
+  transition: 1s;
+}
+:root.blue-on-orange .checkbox:hover,
+:root.blue-on-orange .checkbox:focus,
+:root.blue-on-orange img:hover,
+:root.blue-on-orange img:focus {
+  background: black;
+  box-shadow: 0 0 3px 3px black;
+  border: 0px;
+  border-radius: 5px;
+  color: #FFaa00;
+}
+:root.blue-on-orange .text:focus {
+  background: black;
+  box-shadow: 0 0 3px 3px black;
+  border: 0px;
+  border-left: solid 9px black;
+  border-right: solid 9px black;
+  border-radius: 5px;
+  color: #FFaa00;
+}
+:root.blue-on-orange .text:hover {
+  border-left: solid 9px black;
+  border-right: solid 9px black;
+  border-radius: 5px;
+}
+:root.blue-on-orange .text {
+  color: black;
+  margin-left: 10px;
+  padding-left: 5px;
+  width: 200px;
+  border-left: solid 9px #FFaa00;
+  border-right: solid 9px #FFaa00;
+}
+:root.blue-on-orange .text2 {
+  margin-left: 10px;
+  padding-left: 5px;
+  width: 200px;
+  border-left: solid 9px #FFaa00;
+  border-right: solid 9px #FFaa00;
+  text-decoration: line-through;
+  -moz-text-decoration-color: blue;
+  -webkit-text-decoration-color: blue;
+  text-decoration-color: blue;
+}
+@media (max-width: 361px) {
+  :root.blue-on-orange .hide-on-small-screen {
+    display: none;
+  }
+}
+:root.blue-on-orange #flex {
+  border: solid blue;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 5% 10px 10px 10px;
+}
+:root.blue-on-orange #flex > * {
+  margin: 10px;
+}
+:root.vert-on-rouge body {
+  background: red;
+  color: green;
+}
+:root.vert-on-rouge article {
+  display: flex;
+  padding: 2px;
+}
+:root.vert-on-rouge #page {
+  margin: 20px 0 20px 10px;
+  font-family: 'Pacifico', cursive;
+}
+:root.vert-on-rouge #input {
+  margin-left: 5%;
+  border: 0px;
+  border-radius: 10px;
+  border-color: green;
+  box-shadow: 0 0 10px 10px green;
+  background: green;
+  color: #8c0000;
+  padding-left: 5px;
+}
+:root.vert-on-rouge #todolist {
+  padding-top: 2%;
+  padding-right: 2%;
+}
+:root.vert-on-rouge #todolist:empty::after {
+  content: "Veuillez entrer une nouvelle tâche à faire svp!";
+  font: bold italic 100% serif;
+  text-align: center;
+  color: blue;
+}
+:root.vert-on-rouge button {
+  min-width: 50%;
+  max-width: 100%;
+  background: black;
+  color: red;
+  opacity: 0.8;
+  mix-blend-mode: difference;
+  transition: 1s;
+}
+:root.vert-on-rouge button:hover {
+  opacity: 1;
+  background: red;
+  color: green;
+}
+:root.vert-on-rouge button:disabled {
+  display: none;
+}
+:root.vert-on-rouge img {
+  min-width: 16px;
+  max-height: 16px;
+  margin-left: 50px;
+  background: inherit;
+}
+:root.vert-on-rouge #btnimg {
+  transition: 0s;
+}
+:root.vert-on-rouge header {
+  font-weight: 700;
+}
+:root.vert-on-rouge .checkbox {
+  min-width: 16px;
+  min-height: 16px;
+}
+:root.vert-on-rouge .checkbox,
+:root.vert-on-rouge .text,
+:root.vert-on-rouge img {
+  transition: 1s;
+}
+:root.vert-on-rouge .checkbox:hover,
+:root.vert-on-rouge .checkbox:focus,
+:root.vert-on-rouge img:hover,
+:root.vert-on-rouge img:focus {
+  background: black;
+  box-shadow: 0 0 3px 3px black;
+  border: 0px;
+  border-radius: 5px;
+  color: red;
+}
+:root.vert-on-rouge .text:focus {
+  background: black;
+  box-shadow: 0 0 3px 3px black;
+  border: 0px;
+  border-left: solid 9px black;
+  border-right: solid 9px black;
+  border-radius: 5px;
+  color: red;
+}
+:root.vert-on-rouge .text:hover {
+  border-left: solid 9px black;
+  border-right: solid 9px black;
+  border-radius: 5px;
+}
+:root.vert-on-rouge .text {
+  color: black;
+  margin-left: 10px;
+  padding-left: 5px;
+  width: 200px;
+  border-left: solid 9px red;
+  border-right: solid 9px red;
+}
+:root.vert-on-rouge .text2 {
+  margin-left: 10px;
+  padding-left: 5px;
+  width: 200px;
+  border-left: solid 9px red;
+  border-right: solid 9px red;
+  text-decoration: line-through;
+  -moz-text-decoration-color: green;
+  -webkit-text-decoration-color: green;
+  text-decoration-color: green;
+}
+@media (max-width: 361px) {
+  :root.vert-on-rouge .hide-on-small-screen {
+    display: none;
+  }
+}
+:root.vert-on-rouge #flex {
+  border: solid green;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 5% 10px 10px 10px;
+}
+:root.vert-on-rouge #flex > * {
+  margin: 10px;
+}

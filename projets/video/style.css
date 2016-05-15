@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+@import "../../common/css/common_style.css";
+@import "../../common/css/normalize.min.css";
+*
+{
+    background: black;
+}
+#logot
+{
+    margin: 20px 0 20px 10px;
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: inset 0 0 5px 5px;
+}
+#you
+{
+    float: left;
+    text-align: right;
+    background:  rgba(255,255,255,0);
+}
+#you h1
+{
+    background: white;
+    color: black;
+}
+#tube
+{
+    position: relative;
+    float: right;
+    background:  rgba(255,255,255,0);
+}
+#tube h1
+{
+    background: red;
+    color: white;
+    border-radius: 10px;
+}
+#flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    box-sizing: border-box;
+}
+#video
+{
+    padding: 20px;
+    margin-bottom: 5%;
+    position: relative;
+	padding-bottom: 5%;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 400px;
+    width: 50%;
+    min-height: 100%;
+    border: solid;
+    border-radius: 40px 40px 10px 10px;
+    border-color: red;
+}
+iframe
+{
+    box-sizing: border-box;
+    position: relative;
+	top: 0;
+	left: 0;
+    width: 100%;
+	min-height: 100%;
+}
+
+h2
+{
+    background: orange;
+    border-radius: 20px 20px 10px 10px;
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+}

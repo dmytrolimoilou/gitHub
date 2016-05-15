@@ -1,0 +1,30 @@
+[
+        { "nom": "Langues",
+          "dir": "langues"
+         ,  "description": "Pratique de l'utilisation des sélecteurs et de la mise en page avec CSS3",
+            "sujet":["CSS3","HTML5","Sélecteurs", "jQuery"] 
+        },
+        { "nom": "Pens", 
+          "dir": "pens" 
+         , "description": "Exercices que j'ai faits sur CodePen."
+        },
+        { "nom": "Youtube", 
+          "dir": "video" },
+        { "nom": "Tutoriel", 
+          "dir": "tutorielJS" },
+        { "nom": "Todo", 
+          "dir": "Todo" },
+        { "nom": "Todo ", 
+          "dir": "Todo" ,
+            "skin": "?skin=",
+            "descrip": "(classic)"},
+        { "nom": "Todo ", 
+          "dir": "Todo" ,
+            "skin": "?skin=blue-on-orange",
+            "descrip": "(orange)"},
+        { "nom": "Todo ", 
+          "dir": "Todo" ,
+            "skin": "?skin=vert-on-rouge",
+            "descrip": "(autre)"
+        }
+]

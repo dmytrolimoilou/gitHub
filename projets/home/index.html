@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <script src="../../common/scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+<title>TP2</title>
+</head>
+<body>
+    <div id="base">
+        <div id="sour" ><input id="chb1" type="checkbox" value="cb1" >Sourdine</div>
+        <div id="nom">
+            <h1>Dmytro Dobrovolskyi</h1>
+        </div>
+        <p class="monimg"><img src="Moi.jpg" alt="image"></p>
+        <p>
+        <h2>Bienvenue sur mon site web!</h2>
+        <p>Je vous invite à le visiter. Les rubriques disponibles, en ordre alphabétique, sont les suivantes:
+        <ul id="ulMenu">
+        </ul>
+        <audio src="Dmytro.mp3"></audio>
+        
+        <script id="templateScript" type="text/x-handlebars-template">
+            {{#each projets}}
+            <li><a href="../{{dir}}/index.html{{skin}}">{{nom}}
+                {{#if descrip}}
+                <span id="col">{{descrip}}</span>
+                {{/if}}
+                </a>
+                    {{#if description}}
+                        <div>
+                            {{description}}
+                                {{#if sujet}}
+                                    <span><br>Sujet:</span>
+                                    {{#each sujet}}
+                                        <span>{{this}}</span>
+                                    {{/each}}
+                                {{/if}}
+                        </div>
+                    {{/if}}
+            </li>
+            {{/each}}
+        </script>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

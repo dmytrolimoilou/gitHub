@@ -1,0 +1,170 @@
+@import "../../common/css/common_style.css";
+@import "../../common/css/normalize.min.css";
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+.skin(
+@main-color : red;
+@background-color: black;
+@highlight-color: white;
+@flash-color: lime;
+@input-color: #8c0000;
+)
+{
+body
+{
+    background: @background-color;
+    color: @main-color;
+}
+
+article
+{
+    display: flex;
+    padding: 2px;
+}
+
+#page
+{
+    margin: 20px 0 20px 10px;
+    font-family: 'Pacifico', cursive;
+}
+
+#input
+{
+    margin-left: 5%;
+    border:  0px;
+    border-radius: 10px;
+    border-color: @main-color;
+    box-shadow: 0 0 10px 10px @main-color;
+    background: @main-color;
+    color: @input-color;
+    padding-left: 5px;
+}
+
+#todolist
+{
+    padding-top: 2%;
+    padding-right: 2%;
+}
+
+#todolist:empty::after
+{
+    content: "Veuillez entrer une nouvelle tâche à faire svp!";
+    font: bold italic 100% serif;
+    text-align: center;
+    color: @flash-color;
+}
+button
+{
+    min-width: 50%;
+    max-width: 100%;
+    background: @highlight-color;
+    color: @background-color;
+    opacity: 0.8;
+    mix-blend-mode: difference;
+    transition: 1s;
+}
+button:hover
+{
+    opacity: 1;
+    background: @background-color;
+    color: @main-color;
+}
+
+button:disabled
+{
+    display: none;
+}
+img
+{
+    min-width: 16px;
+    max-height: 16px;
+    margin-left: 50px;
+    background: inherit;
+}
+
+#btnimg
+{
+    transition: 0s;
+    //background: inherit;
+}
+header
+{
+    font-weight: 700;
+}
+
+.checkbox
+{
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.checkbox, .text, img
+{
+    transition: 1s;
+}
+
+.checkbox:hover, .checkbox:focus, img:hover, img:focus
+{
+    background: @highlight-color;
+    box-shadow: 0 0 3px 3px @highlight-color;
+    border: 0px;
+    border-radius: 5px;
+    color: @background-color;
+}
+.text:focus
+{
+    background: @highlight-color;
+    box-shadow: 0 0 3px 3px @highlight-color;
+    border: 0px;
+    border-left: solid 9px @highlight-color;
+    border-right: solid 9px @highlight-color;
+    border-radius: 5px;
+    color: @background-color;
+}
+.text:hover
+{
+    border-left: solid 9px @highlight-color;
+    border-right: solid 9px @highlight-color;
+    border-radius: 5px;
+}
+.text
+{
+    color: @highlight-color;
+    margin-left: 10px;
+    padding-left: 5px;
+    width: 200px;
+    border-left: solid 9px @background-color;
+    border-right: solid 9px @background-color;
+}
+.text2
+{
+    margin-left: 10px;
+    padding-left: 5px;
+    width: 200px;
+    border-left: solid 9px @background-color;
+    border-right: solid 9px @background-color;
+    //opacity: 0.5;
+    text-decoration: line-through;
+    -moz-text-decoration-color: @main-color;
+    -webkit-text-decoration-color: @main-color;
+    text-decoration-color: @main-color;
+}
+
+@media (max-width: 361px) {
+    .hide-on-small-screen{ 
+        display: none;
+    }
+}
+
+#flex
+{
+    border: solid @main-color;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5% 10px 10px 10px;
+}
+
+#flex > *
+{
+    margin: 10px;
+}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr" class="">
+<head>
+<meta charset="UTF-8">
+    <script src="../../common/scripts/main.js"></script>
+    <title>TP2</title>
+    <link rel="stylesheet/less" href="styles.less">
+    <script src="less.js"></script>
+</head>
+<body>
+<h1 id="page">
+Todo
+</h1>
+<div id="princip">
+    <h1 id="return"><a href="../home/index.html">Return à l'accueil</a></h1>
+    <span>Skin: </span>
+    <select id="selectSkin">
+        <option value="" selected>Rouge on Black</option>
+        <option value="blue-on-orange">Blue on Orange</option>
+        <option value="vert-on-rouge">Vert on Rouge</option>
+    </select>
+</div >
+<div id="flex">
+    <header>
+        <span class="hide-on-small-screen">Todo </span>
+        <input type="text" id="input" placeholder="Entrez ici..." autofocus>
+    </header>
+</div>
+    <template>
+        <article>
+            <input type="checkbox" class="checkbox"></input>
+            <div class="text" tabindex="0" contenteditable=""></div>
+            <img src="delete64.png" alt="delete" tabindex="0"></img>
+        </article>
+    </template>
+<script src="todo.js"></script>
+</body>
+</html>

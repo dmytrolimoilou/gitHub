@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+@import "../../common/css/common_style.css";
+@import "../../common/css/normalize.min.css";
+*
+{
+  background: black;
+}
+
+#page
+{
+  color: yellow;
+  margin: 30px 0 0 20px;
+}
+
+iframe
+{
+  position:relative;
+  border:solid;
+  border-color: red;
+  border-radius: 30px;
+  margin: 30px 5px 5px 5px;
+}
+
+button
+{
+    background-color: #d0d0d0;
+    width: 180px;
+}
+
+#princip
+{
+    //display: flex;
+}
+.artbtn
+{
+   // margin-right: 0px;
+    //display:inline-block
+}

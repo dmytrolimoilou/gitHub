@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+@import "../../common/css/common_style.css";
+@import "../../common/css/normalize.min.css";
+*
+{
+    background: black;
+    color: yellow;
+}
+
+#page
+{
+     margin: 20px 0 20px 10px;
+}
+
+#msg
+{
+    margin: 30px 0 20px 10px;
+}
+
+#flex
+{
+    background: orange;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+#flex > *
+{
+    flex:auto;
+    margin: 10px;
+    min-width: 400px;
+}

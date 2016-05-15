@@ -1,0 +1,22 @@
+#princip
+{
+    z-index: 1;
+    padding: 0 10px 0 25px;
+    position:fixed;
+    background: radial-gradient(rgba(128,128,128,1), rgba(128,128,128,.8), rgba(128,128,128,0.5));
+    border:solid;
+    border-color: #b0b0b0;
+    border-radius:0 0 0 30px;
+    box-shadow: inset;
+    right: 0;
+    top:0;
+    text-align: center;
+    padding: 1%;
+}
+
+#return, h1 a
+{
+    font-size: 30px;
+    color: #02aa00;
+    background: rgba(255,255,255,0);
+}
